@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "fd40c662-1862-4119-8630-a080b973f5ec",
+		"name": "Lab8",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29630589"
+	},
+	"item": [
+		{
+			"name": "Обновить наличие аудитории",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"free_audiences\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/booking/5/update_free_audiences/"
+			},
+			"response": []
+		},
+		{
+			"name": "Узнать наличие аудитории",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"audiences_id\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://127.0.0.1:8070/check_free_audiences/"
+			},
+			"response": []
+		}
+	]
+}
