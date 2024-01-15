@@ -1,0 +1,233 @@
+.order-text {
+    font-size: 105px;
+    color: #8B4513;
+    vertical-align: middle;
+    display: flex;
+    text-align: center;
+    background-color: #FFF8DC;
+  }
+  
+
+
+  .text_order{
+    font-size: 25px;
+    color: #8B4513;
+    background-color: #FFF8DC;
+    width: 1920px;
+    height: 1000px;
+    background-size: cover;
+    background-position: center;
+    vertical-align: top;
+  }
+
+  .text_big{
+    font-size: 60px;
+    color: #8B4513;
+    background-color: #FFF8DC;
+
+  }
+  .text{
+    font-size: 30px;
+  }
+  .order-list{
+    font-size: 30px;
+    color: #8B4513;
+    background-color: #FFF8DC;
+  }
+
+  .cards{
+    font-size: 20px;
+    background-color: #FFEBCD;
+    color: #8B4513;
+  }
+
+  .button[type="text"]{
+    padding: 5px;
+    border:1px solid  #FFF8DC;
+    border-radius: 3px;
+  }
+
+  .button[type="submit"]{
+    padding: 5px 10px;
+    background-color:  #FFF8DC;
+    color: #FFF8DC;
+    border: none;
+    border-radius: 3px;
+  }
+  
+  .search[type="text"]{
+    padding: 5px;
+    font-size: 20px;
+    background-color:  #FFF8DC;
+  }
+
+  .search[type="submit"]{
+    padding: 5px 10px;
+    background-color:  #FFF8DC;
+    color:#FFF8DC;
+    border: none;
+    border-radius: 3px;
+  }
+
+a{
+  font-size: 75px;
+  color: #8B4513;
+  text-decoration: none;
+}
+.order-listtext{
+  font-size: 60px;
+  text-align: center;
+  text-emphasis-color:#8B4513;
+  color: #8B4513;
+  background-color: #FFF8DC;
+}
+.container {  
+  display: flex;  
+  flex-direction: column;
+}
+
+/*--------------------*/
+.order-div {
+    width: 390px;
+    height: 390px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 30px;
+    /* text-align: center; */
+    vertical-align: middle;
+    transition: transform 0.2s ease-in-out;
+    background-color: #FFEBCD;
+}
+/*search*/
+
+:root {
+  --rad: .7rem;
+  --dur: .3s;
+  --color-dark: #8B4513;
+  --color-light:  #FFF8DC;
+  --color-brand: #FFF8DC;
+  --font-fam: 'Lato', sans-serif;
+  --height: 5rem;
+  --btn-width: 6rem;
+  /* --bez: cubic-bezier(0, 0, 0.43, 1.49); */
+}
+
+
+body {background: var(#FFF8DC); display: flex; align-items: center; min-height: 100vh }
+html { box-sizing: border-box; height: 100%; font-size: 10px; } *, *::before, *::after { box-sizing: inherit; }
+
+
+form {
+  position: relative;
+  width: 30rem;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+}
+input, button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(#FFF8DC);
+  font-size: 1.8rem;
+}
+input[type="search"] {
+  outline: 0; 
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none; 
+  transition: all var(--dur) var(--bez);
+  z-index: 1;
+  position: relative;
+}
+button {
+  display: none; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+  }
+}
+label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+   
+/*button*/
+body {
+  background: #FFF8DC;
+  margin: 0;
+  padding: 0;
+}
+
+.color{
+  background: #FFF8DC;
+}
+
+.buttons-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background: #FFF8DC;
+  color: #FFEBCD;
+ /*  justify-content: center; */
+}
+
+button {
+  background: #8B4513;
+  border: solid 2px #8B4513;
+  padding: .375em 1.125em;
+  font-size: 1rem;
+}
+
+.button-arounder {
+  font-size: 2rem;
+  background: #FFF8DC;
+  color: #8B4513;
+  
+  box-shadow: 0 0px 0px #8B4513;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  
+  --dur: .15s;
+  --delay: .15s;
+  --radius: 16px;
+  
+  transition:
+    border-top-left-radius var(--dur) var(--delay) ease-out,
+    border-top-right-radius var(--dur) calc(var(--delay) * 2) ease-out,
+    border-bottom-right-radius var(--dur) calc(var(--delay) * 3) ease-out,
+    border-bottom-left-radius var(--dur) calc(var(--delay) * 4) ease-out,
+    box-shadow calc(var(--dur) * 4) ease-out,
+    transform calc(var(--dur) * 4) ease-out,
+}
+
+.button-arounder:hover,
+.button-arounder:focus {
+  box-shadow: 0 4px 8px #8B4513;
+  transform: translateY(-4px);
+  background: #FFF8DC;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+}
